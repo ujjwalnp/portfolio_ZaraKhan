@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ 
+.head {
+    @apply shadow-2xl;
+    border-bottom: 0px;
+}
+
+.hero{
+  
+    background-size: 70%;
+}
+ 
+.frame{ 
+    overflow: hidden;  
+ 
+}
+  
+  .inner-img {
+    transition: transform .7s;
+  
+    filter: brightness(100%);
+  }
+ 
+  .inner-img:hover {
+     transform: scale(1.1);
+  
+    filter: brightness(100%);
+  }
+  /* .inner-imganone:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    opacity: 1;
+    filter: brightness(100%);
+  }
+   */
+   
+#header {
+    width: 100%;
+    position: fixed;
+    z-index:9000;
+    overflow: auto;
+    transition: all 0.15s linear;
+}
+
+#header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.4);  
+     background-color: white; 
+}
