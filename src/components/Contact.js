@@ -21,7 +21,7 @@ export default function Contact() {
   }
 
   function handleSubmit(e) {
-    e.preventDefault();
+    
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -29,6 +29,7 @@ export default function Contact() {
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
+      e.preventDefault();
   }
 
   return (
@@ -42,8 +43,10 @@ export default function Contact() {
         
        <div className="md:flex-1 md:order-2 overflow-hidden flex-initial">
         <form
+        
             netlify
             name="contact"
+            onSubmit={handleSubmit}
             className=" flex bg-red-50 p-10 flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
           >
            <Fade right cascade duration={2000}>   <div>

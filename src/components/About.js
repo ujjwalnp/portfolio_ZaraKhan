@@ -37,8 +37,8 @@ export default function About() {
         <div className="md:flex-1   md:pl-0 flex-initial w-full flex h-full mb-20">
         <Slide left cascade duration={1000}>     <p className="lg:w-5/6 text-xl leading-relaxed text-left  se">
             <span className="font-medium text-xl">Hello!</span> My name is Zara
-            and I enjoy creating things that live on the internet. As a
-            Front-End developer, I enjoy bridging the gap between engineering
+            and I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. As a
+            Front-End developer, I bridge the gap between engineering
             and design. I always have a keen eye for aesthetics to create a beautiful
             product.
             <br></br>
