@@ -5,9 +5,18 @@
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@heroicons/react": "^1.0.1",
+    "animate.css": "^4.1.1",
+    "material-tabs": "0.0.8",
+    "rc-tabs": "^11.9.1",
     "react": "^17.0.2",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.2",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^1.1.5",
+    "react-tabs": "^3.2.2",
+    "smoothscroll-polyfill": "^0.4.4",
     "tailwindcss-transitions": "^2.2.0"
   },
   "scripts": {

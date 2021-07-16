@@ -1,33 +1,138 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+// import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+
 export default function Skills() {
   return (
-    <section id="skills">
-      <div className="container px-5 py-10 mx-auto">
-        <div className="text-center mb-20">
-          <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-            Skills &amp; Technologies
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-            ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-            possimus est.
-          </p>
-        </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
+    <section id="skills" className="text-gray-700  ">
+      <Fade left duration={2000}>
+        {" "}
+        <h1 className="md:text-6xl text-4xl font-medium text-center title-font mb-4 ">
+          Skills &amp; Technologies
+        </h1>
+      </Fade>
+      <div className="w-full md:px-0 px-5 pt-10 mx-auto">
+        <div className="flex flex-wrap lg:w-4/5 mx-auto w-full">
+          <Slide left cascade duration={1000}>
+            {" "}
+            <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+              <div>
+                <Fade left duration={2000}>
+                  <p className="text-xl px-2 py-4 font-medium w-full text-left">
+                    Languages & Libraries
+                  </p>
+                </Fade>
+                <Fade cascade delay={500} duration={1000}>
+                  <div className="md:grid-cols-1 grid grid-cols-2 ">
+                    {skills
+                      .filter((skill) => skill.type === "A")
+                      .map((skillA) => (
+                        <div className="p-2 w-full">
+                          <div className="flex py-1 md:py-2 h-full items-center">
+                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            <img
+                              alt="icon"
+                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              src={skillA.icon}
+                            />
+                            <span className="title-font font-medium ">
+                              {skillA.name}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </Fade>{" "}
+              </div>
+              <div>
+                <Fade left duration={2000}>
+                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
+                    Frameworks & CMS
+                  </p>
+                </Fade>
+                <Fade cascade delay={500} duration={1000}>
+                  <div className="md:grid-cols-1 grid grid-cols-2 ">
+                    {skills
+                      .filter((skill) => skill.type === "B")
+                      .map((skillB) => (
+                        <div className="p-2   w-full">
+                          <div className="  flex py-1 md:py-2 h-full items-center">
+                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            <img
+                              alt="icon"
+                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              src={skillB.icon}
+                            />
+                            <span className="title-font font-medium ">
+                              {skillB.name}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                  </div>{" "}
+                </Fade>
+              </div>
+              <div>
+                <Fade left duration={2000}>
+                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
+                    Tools
+                  </p>
+                </Fade>
+                <Fade cascade delay={500} duration={1000}>
+                  <div className="md:grid-cols-1 grid grid-cols-2 ">
+                    {skills
+                      .filter((skill) => skill.type === "C")
+                      .map((skillC) => (
+                        <div className="p-2   w-full">
+                          <div className="  flex py-2  h-full items-center">
+                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            <img
+                              alt="icon"
+                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              src={skillC.icon}
+                            />
+                            <span className="title-font font-medium ">
+                              {skillC.name}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </Fade>
+              </div>
+              <div>
+                <Fade left duration={2000}>
+                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
+                    Design
+                  </p>
+                </Fade>
+                <Fade cascade delay={500} duration={1000}>
+                  <div className="md:grid-cols-1 grid grid-cols-2 ">
+                    {skills
+                      .filter((skill) => skill.type === "D")
+                      .map((skillD) => (
+                        <div className="p-2  w-full">
+                          <div className="  flex py-1 md:py-2 h-full items-center">
+                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            <img
+                              alt="icon"
+                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              src={skillD.icon}
+                            />
+                            <span className="title-font font-medium ">
+                              {skillD.name}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </Fade>
               </div>
             </div>
-          ))}
+          </Slide>
         </div>
       </div>
     </section>

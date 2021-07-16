@@ -1,69 +1,239 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    title: "NBKC Bank",
+    subtitle: "Online Banking Website",
+    description:  "  NBKC is an online bank in USA that provides easy online applications, hassle-free accounts, business and personal loans and knowledgeable support. The site was built in OctoberCMS using HTML5, TailwindCSS and JavaScript.",
+    image: "./Images/projects/nbkc.png",
+    link: "https://www.nbkc.com/",
+    tags:  [{ tag: "Tailwind"  }, { tag: "OctoberCMS"  }, { tag: "JavaScript"  }    ],
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+    title: "UV Schools",
+    subtitle: "School Management System",
+    description:  "   UVSchools is the most user friendly CMS based managment system supported to streamlining the administrative tasks & develop a powerful relationship between educators & parents for child's holistic development. The system was developed using Bootstrap and AngularJS. ",
+    image: "./Images/projects/uv-schools.png",
+    link: "https://www.uvschools.com/",
+    tags:  [{ tag: "Bootstrap"  }, { tag: "AngularJS"  }, { tag: "HTML5"  }    ],
+  },
+   
+];
+
+export const skills = [
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "HTML5 ",
+    type: "A",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "CSS3 / SASS ",
+    type: "A",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "JavaScript / jQuery",
+    type: "A",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "React",
+    type: "A",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Adobe Photoshop",
+    type: "D",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Adobe Illustrator",
+    type: "D",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Sketch",
+    type: "D",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Figma",
+    type: "D",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Adobe Indesign",
+    type: "D",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Adobe XD",
+    type: "D",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Netlify",
+    type: "C",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Wordpress",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "OctoberCMS",
+    type: "B",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "PHP",
+    type: "A",
   },
+
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Git / Github",
+    type: "C",
   },
+
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reedbarger.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "SQL",
+    type: "A",
   },
+  
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://jsbootcamp.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Python",
+    type: "A",
   },
+
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://pythonbootcamp.com",
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Materialize",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Chrome DevTools",
+    type: "C",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Docker",
+    type: "C",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Tailwind CSS",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Bootstrap",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "BitBucket",
+    type: "C",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Laravel",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Codeigniter",
+    type: "B",
+  },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Jira",
+    type: "C",
   },
 ];
+
+export const experience = [
+  {
+    company: "BlueLion Web Studio",
+    role: "Front End Web Developer",
+    duration: "Dec 2018 - Present",
+    link: "https://www.linkedin.com/company/blue-lion-web-studio/",
+    key: "1",
+    tasks: [
+      {
+        task: "Determined the structure and design of web pages, and ensured that the web design is optimized for multiple screens",
+      },
+      {
+        task: "Striked a balance between functional and aesthetic design while Maintaining brand consistency throughout the design",
+      },
+      {
+        task: "Developed features to enhance the user experience and Optimized web pages for maximum speed and scalability",
+      },
+      { task: "Recreates the frontend design for a leading bank website in Kansas, USA." },
+    ],
+  },
+  {
+    company: "United Vision",
+    role: "Web Developer and Designer",
+    duration: "Nov 2017 - Nov 2018",
+    link: "https://www.uvschools.com/",
+    key: "2",
+    tasks: [
+      {
+        task: "Creates the front-end design for a leading school management system that's successfully deployed in various schools in Lybia, Sudan, and Malaysia.",
+      },
+      {
+        task: "Developed and maintained the company website",
+      },
+      {
+        task: "Used best practices to optimize SEO",
+      } 
+    ],
+  },
+
+  {
+    company: "Xgeeksters",
+    role: "Web Designer",
+    duration: "Jan 2017 - Oct 2017",
+    link: "#",
+    key: "3",
+    tasks: [
+      {
+        task: "Created web pages, using standard HTML/CSS practices, while incorporating data from back-end databases and services.",
+      },
+      {
+        task: "Used designing tools (Adobe Photoshop, Adobe Illustrator) to design and edit illustrations, vectors and images to websites",
+      },
+      { task: "Build reusable code for future use" },
+      
+   
+    ],
+  },
+];
+
+
 
 export const testimonials = [
   {
@@ -80,13 +250,4 @@ export const testimonials = [
     name: "Ruben Alvarez",
     company: "Dooble.io",
   },
-];
-
-export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
 ];
