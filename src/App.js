@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
  
 
 export default function App() {
+  
   return (
     <main>
       <Navbar />
@@ -27,4 +28,5 @@ export default function App() {
     </main>
     
   );
+  
 }

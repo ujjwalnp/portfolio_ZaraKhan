@@ -1,7 +1,6 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
-import Pulse from 'react-reveal/Pulse'; 
-import Zoom from 'react-reveal/Zoom';
+ 
 import Slide from 'react-reveal/Slide';
 
 
@@ -42,10 +41,10 @@ export default function Contact() {
       <div className="w-full md:w-3/4  mx-auto grid md:grid-cols-2 grid-cols-1 content-center    ">
         
        <div className="md:flex-1 md:order-2 overflow-hidden flex-initial">
-        <form
-        
+        <form 
             netlify
             name="contact"
+            data-netlify='true'
             onSubmit={handleSubmit}
             className=" flex bg-red-50 p-10 flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
           >

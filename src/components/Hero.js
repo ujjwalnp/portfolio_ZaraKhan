@@ -1,6 +1,5 @@
 import React from "react";
-
-import Rotate from 'react-reveal/Rotate';
+ 
 import Slide from 'react-reveal/Slide';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';

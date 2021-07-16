@@ -7,10 +7,8 @@ import React from 'react';
  
 import Tabs, { TabPane } from "rc-tabs";
 import { experience } from "../data";
-import Slide from 'react-reveal/Slide';
-import Pulse from 'react-reveal/Pulse';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide'; 
+import Fade from 'react-reveal/Fade'; 
 
 export default function Experience() {
   
