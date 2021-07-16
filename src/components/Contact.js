@@ -3,7 +3,34 @@ import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse'; 
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
+
+
+
 export default function Contact() {
+
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
+
   return (
     <section id="contact"  >
       <p className="md:py-16 py-10"></p>
