@@ -32,10 +32,10 @@ export default function Skills() {
                       .map((skillA) => (
                         <div className="p-2 w-full">
                           <div className="flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
                             <img
                               alt="icon"
-                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              className="w-4 h-4 lex-shrink-0 mr-4"
                               src={skillA.icon}
                             />
                             <span className="title-font font-medium ">
@@ -60,10 +60,10 @@ export default function Skills() {
                       .map((skillB) => (
                         <div className="p-2   w-full">
                           <div className="  flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
                             <img
                               alt="icon"
-                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              className="w-4 h-4 lex-shrink-0 mr-4"
                               src={skillB.icon}
                             />
                             <span className="title-font font-medium ">
@@ -88,10 +88,10 @@ export default function Skills() {
                       .map((skillC) => (
                         <div className="p-2   w-full">
                           <div className="  flex py-2  h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
                             <img
                               alt="icon"
-                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              className="w-4 h-4 lex-shrink-0 mr-4"
                               src={skillC.icon}
                             />
                             <span className="title-font font-medium ">
@@ -116,10 +116,10 @@ export default function Skills() {
                       .map((skillD) => (
                         <div className="p-2  w-full">
                           <div className="  flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-6 h-6 flex-shrink-0 mr-4" /> } */}
+                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
                             <img
                               alt="icon"
-                              className="w-6 h-6 lex-shrink-0 mr-4"
+                              className="w-4 h-4 lex-shrink-0 mr-4"
                               src={skillD.icon}
                             />
                             <span className="title-font font-medium ">
