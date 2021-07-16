@@ -50,7 +50,7 @@ export default function About() {
             <br></br>
             My main focus these days is building accessible and digital
             experiences at{" "}
-            <a className="hover:underline text-red-400   transition ease-in-out duration-500 cursor-pointer">
+            <a  href="https://www.linkedin.com/company/blue-lion-web-studio/" className="hover:underline text-red-400   transition ease-in-out duration-500 cursor-pointer">
               Blue Lion web studio
             </a>{" "}
             for a variety of clients.
