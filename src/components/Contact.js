@@ -41,14 +41,12 @@ export default function Contact() {
       <div className="w-full md:w-3/4  mx-auto grid md:grid-cols-2 grid-cols-1 content-center    ">
         
        <div className="md:flex-1 md:order-2 overflow-hidden flex-initial">
-        <form 
-            netlify
-            name="contact"
-            data-netlify='true'
-            onSubmit={handleSubmit}
-            className=" flex bg-red-50 p-10 flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        <form   netlify name="contact"  data-netlify='true'  onSubmit={handleSubmit}  method='POST' className=" flex bg-red-50 p-10 flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
           >
            <Fade right cascade duration={2000}>   <div>
+           <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
             <h2 className="text-gray-700 md:text-4xl text-2xl mb-1 font-medium title-font">
               Let's Talk
             </h2>
@@ -66,6 +64,7 @@ export default function Contact() {
                 id="name"
                 name="name"
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-300 focus:ring-1 focus:ring-red-300 text-sm outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out"
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="relative mb-4">
@@ -80,6 +79,7 @@ export default function Contact() {
                 id="email"
                 name="email"
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-300 focus:ring-1 focus:ring-red-300 text-sm outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-300 ease-in-out"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="relative mb-4">
@@ -93,6 +93,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 className="w-full text-sm bg-white rounded border border-gray-300 focus:border-red-300 focus:ring-1 focus:ring-red-300  outline-none text-gray-700 py-1 px-3 transition-colors duration-300 ease-in-out h-32 resize-none leading-6"
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
             <button
