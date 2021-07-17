@@ -1,10 +1,10 @@
-// import { ArrowRightIcon } from "@heroicons/react/solid";
-
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { XIcon } from "@heroicons/react/solid";
+import React from "react"; 
 import Slide from "react-reveal/Slide";
 
 export default function Navbar() {
+ 
+
   return (
     <header id="header">
       <div className="md:sticky hidden overflow-x-hidden md:block bg-red-50 top-0 z-10">
@@ -51,8 +51,7 @@ export default function Navbar() {
               target="_blank"
               className="inline-flex my-6 md:my-0 rounded-full items-center bg-red-400 border-0 py-2 px-7 focus:outline-none text-white hover:bg-red-450 transition ease-in-out duration-500 text-base "
             >
-              Resume
-              {/* <ArrowRightIcon className="w-6  hover:ml-6 transition ease-in-out duration-500 h-4 ml-3" /> */}
+              Resume 
             </a>
           </div>
         </Slide>
@@ -68,28 +67,19 @@ export default function Navbar() {
             />
           </a>
         </div>
-        <Menu isOpen={false} customBurgerIcon={<img src="./Images/svg/menu.svg" alt=" " />}  right   >
-          <a className="menu-item" href="#about">
-            About
-          </a>
-          <a className="menu-item" href="#experience">
-            Experience
-          </a>
-          <a className="menu-item" href="#projects">
-            Portfolio
-          </a>
-          <a className="menu-item" href="#contact">
-            Contact
-          </a>
+   <img  className=" burger h-8 m-6 fill-red-400" src="./Images/svg/menu.svg" alt=" " />
+        <div hidden className=" menu h-full right-0 fixed bg-gray-700 w-auto"> 
+        <XIcon className="cross h-6 float-right m-6  text-red-50 " />
+           <ul className="text-red-50 my-16 mx-10 ">
+            <li className="item py-2 "><a href="#about">About</a></li>
+            <li className="item py-2 "><a href="#experience">Experience</a></li>
+            <li className="item py-2 "><a href="#projects">Portfolio</a></li>
+            <li className="item py-2 "><a href="#contact">Contact</a></li>
+            <li className="item py-10 "><a href="./ZaraKhan-Resume.pdf" target="_blank"  className="  text-center my-10 w-40 rounded-full items-center bg-red-400 py-2 px-7 focus:outline-none  text-white hover:bg-red-450 transition ease-in-out duration-500 text-base " >
+            Resume </a></li>
+          </ul>
+        </div>
 
-          <a
-            href="./ZaraKhan-Resume.pdf"
-            target="_blank"
-            className="inline-flex text-center my-10 md:my-0 w-44 rounded-full items-center bg-red-400 border-0 py-2 px-7 focus:outline-none  text-white hover:bg-red-450 transition ease-in-out duration-500 text-base "
-          >
-            Resume
-          </a>
-        </Menu>
       </div>
     </header>
   );

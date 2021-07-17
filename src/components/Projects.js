@@ -1,14 +1,14 @@
 import React from "react"; 
 import { projects } from "../data"; 
 import Slide from "react-reveal/Slide";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Zoom"; 
 
 export default function Projects() {
   return (
     <section id="projects">
       <p className="py-16 "></p>
     <div className=" w-full px-4 lg:px-0  ">
-    <Slide left  duration={1000}>   <h1 className="md:text-6xl  text-gray-700 text-4xl font-medium text-center title-font   ">
+    <Slide left  duration={2000}>   <h1 className="md:text-6xl  text-gray-700 text-4xl font-medium text-center title-font   ">
         {/* Some projects i've worked on */}
         Some things I’ve built
       </h1></Slide> 

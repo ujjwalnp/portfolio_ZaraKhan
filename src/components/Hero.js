@@ -16,7 +16,7 @@ export default function Hero() {
           
            <div className=" lg:pl-24 md:pl-16 text-left  mt-32 md:mt-0 md:mx-0 mx-auto md:mb-0  ">
            
-           <Slide left cascade duration={2000}>
+           <Slide left cascade duration={1500}>
              <div>
              
              <h1 className="mb-8  md:mt-0 md:text-7xl text-4xl font-medium text-gray-700 ">

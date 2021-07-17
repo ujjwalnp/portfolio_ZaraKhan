@@ -172,6 +172,17 @@ export const skills = [
     name: "Jira",
     type: "C",
   },
+
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "InVision",
+    type: "D",
+  },
+  {
+    icon: "../images/personal/pointer-holo.svg",
+    name: "Google Analytics",
+    type: "C",
+  },
 ];
 
 export const experience = [
@@ -186,12 +197,12 @@ export const experience = [
         task: "Determined the structure and design of web pages, and ensured that the web design is optimized for multiple screens",
       },
       {
-        task: "Striked a balance between functional and aesthetic design while Maintaining brand consistency throughout the design",
+        task: "Keep a balance between functional and aesthetic design while maintaining brand consistency throughout the design",
       },
       {
         task: "Developed features to enhance the user experience and Optimized web pages for maximum speed and scalability",
       },
-      { task: "Recreates the frontend design for a leading bank website in Kansas, USA." },
+      { task: "Recreated the frontend design for a leading bank website in Kansas, USA." },
     ],
   },
   {
@@ -202,7 +213,7 @@ export const experience = [
     key: "2",
     tasks: [
       {
-        task: "Creates the front-end design for a leading school management system that's successfully deployed in various schools in Lybia, Sudan, and Malaysia.",
+        task: "Created the front-end design for a leading school management system that was successfully deployed in various schools in Lybia, Sudan, and Malaysia.",
       },
       {
         task: "Developed and maintained the company website",
@@ -221,10 +232,10 @@ export const experience = [
     key: "3",
     tasks: [
       {
-        task: "Created web pages, using standard HTML/CSS practices, while incorporating data from back-end databases and services.",
+        task: "Created web pages using standard HTML/CSS practices while incorporating data from back-end database and services.",
       },
       {
-        task: "Used designing tools (Adobe Photoshop, Adobe Illustrator) to design and edit illustrations, vectors and images to websites",
+        task: "Used designing tools (Adobe Photoshop, Adobe Illustrator) to design and edit illustrations, vectors, and images to websites",
       },
       { task: "Build reusable code for future use" },
       

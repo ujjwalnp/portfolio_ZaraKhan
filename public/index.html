@@ -66,6 +66,25 @@ $(window).scroll(function() {
 window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
 
 
+// hide the Menu 
+
+$(document).ready(function(){
+  $(".burger").click(function(){
+    $(".menu").show(500);
+    $(".burger").hide(500);
+  });
+  $(".item").click(function(){
+    $(".menu").hide(500);
+    $(".burger").show(500);
+  });
+  $(".cross").click(function(){
+    $(".menu").hide(500);
+    $(".burger").show(500);
+  });
+});
+
+ 
+
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YZKQ6QJ9B"></script>
@@ -76,5 +95,9 @@ window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
 
   gtag('config', 'G-6YZKQ6QJ9B');
 </script>
+
+
+
+ 
   </body>
 </html>
