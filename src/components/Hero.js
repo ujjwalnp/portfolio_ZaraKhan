@@ -8,10 +8,10 @@ export default function Hero() {
   return (
     <section id="hero" class=" ">
       <div className=" ">
-        <Fade left duration={2000}>
+        <Fade left duration={1000}>
           <div className="w-full px-4  md:px-0  mx-auto flex items-center min-h-screen  flex-wrap bg-none md:bg-hero bg-contain   bg-right-bottom hero bg-no-repeat">
             <div className=" lg:pl-24 md:pl-16 text-left  mt-32 md:mt-0 md:mx-0 mx-auto md:mb-0  ">
-              <Slide left cascade duration={1500}>
+              <Slide left cascade duration={700}>
                 <div>
                   <h1 className="mb-8  md:mt-0 md:text-7xl text-4xl font-medium text-gray-700 ">
                     Hi, I'm Zara.
@@ -24,7 +24,7 @@ export default function Hero() {
                   </h3>
                 </div>
               </Slide>
-              <Flip left cascade duration={2000}>
+              <Flip left cascade duration={1000}>
                 <div className="flex mt-10  justify-start  ">
                   <a
                     href="#contact"
@@ -43,7 +43,7 @@ export default function Hero() {
             </div>
 
             {
-              <Fade right duration={2000}>
+              <Fade right duration={1000}>
                 <div className="w-full md:hidden">
                   <img
                     className="w-full"
