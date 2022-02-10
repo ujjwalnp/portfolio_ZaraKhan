@@ -5,13 +5,13 @@ import { skills } from "../data";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
-export default function Skills() {
+export default function Experties() {
   return (
     <section id="skills" className="text-gray-700  ">
       <Fade top duration={1000}>
         {" "}
         <h1 className="md:text-6xl text-4xl font-medium text-center title-font mb-4 ">
-          Skills &amp; Technologies
+          Skills &amp; Experties
         </h1>
       </Fade>
       <div className="w-full md:px-0 px-5 pt-10 mx-auto">

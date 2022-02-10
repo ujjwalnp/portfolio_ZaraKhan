@@ -8,11 +8,11 @@ export default function Navbar() {
       <div className="md:sticky hidden overflow-x-hidden md:block bg-orange-100 top-0 z-10">
         <Slide top cascade>
           <div className="w-full mx-auto  flex flex-wrap  px-10 flex-col md:flex-row items-center">
-            <div className=" md:my-6  ">
+            <div className=" md:my-2  ">
               <a href="/" className=" ">
                 <img
                   alt="Zara Khan Logo"
-                  className=" w-48"
+                  className=" h-20 "
                   src="./images/personal/logo.png"
                 />
               </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
             <a
               href="./ZaraKhan-Resume.pdf"
               target="_blank"
-              className="inline-flex my-6 md:my-0 rounded-full items-center bg-red-400 border-0 py-2 px-7 focus:outline-none text-white hover:bg-red-450 transition ease-in-out duration-500 text-base "
+              className="inline-flex my-6 md:my-0 rounded-full items-center bg-red-400 border-0 py-2 px-7 focus:outline-none   text-white hover:bg-red-450 transition ease-in-out duration-500 text-base "
             >
               Resume
             </a>
@@ -60,7 +60,7 @@ export default function Navbar() {
           <a href="/">
             <img
               alt="Zara Khan Logo"
-              className=" w-40 m-6"
+              className="h-16 m-4"
               src="./images/personal/logo.png"
             />
           </a>
@@ -91,7 +91,7 @@ export default function Navbar() {
                 target="_blank"
                 className="  text-center my-10 w-40 rounded-full items-center bg-red-400 py-2 px-7 focus:outline-none  text-white hover:bg-red-450 transition ease-in-out duration-500 text-base "
               >
-                Resume{" "}
+                Resume
               </a>
             </li>
           </ul>

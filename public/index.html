@@ -1,93 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    
-    <title>Zara Khan</title>
-    <meta name="image" content="https://zarakhan.netlify.app/og.png"/>
-    <meta name="description" content="A Web Developer who specializes in Designing and Building accessible, high-quality digital experiences."/>
-    <meta property="og:title" content="Zara Khan"/>
-    <meta property="og:image" content="https://zarakhan.netlify.app/og.png"/>
-    <meta property="og:description" content="A Web Developer who specializes in Designing and Building accessible, high-quality digital experiences."/>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <title>Zara Khan</title>
+  <meta name="image" content="https://zarakhan.netlify.app/og.png" />
+  <meta name="description"
+    content="A Web Developer who specializes in Designing and Building accessible, high-quality digital experiences." />
+  <meta property="og:title" content="Zara Khan" />
+  <meta property="og:image" content="https://zarakhan.netlify.app/og.png" />
+  <meta property="og:description"
+    content="A Web Developer who specializes in Designing and Building accessible, high-quality digital experiences." />
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
- 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
- 
-  </head>
-  <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <form name="contact" data-netlify='true'   netlify-honeypot="bot-field" hidden>
-    
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    .imgLoader {
+      animation: spin 0.5s linear infinite;
+      margin: auto;
+    }
+
+    .divLoader {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <form name="contact" data-netlify='true' netlify-honeypot="bot-field" hidden>
+
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
   </form>
-  
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  
-<script>
 
-// java script for header shadow on  scroll
-$(window).scroll(function() {     
-  var scroll = $(window).scrollTop();
-  if (scroll > 0) {
-      $("#header").addClass("active");
-  }
-  else {
-      $("#header").removeClass("active");
-  }
-});
-
-window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+  <noscript>You need to enable JavaScript to run this app.</noscript>
 
 
+  <div id="root">
+    <div class="divLoader">
+      <img src="./Images/personal/logo.png" alt="">
+    </div>
 
-// hide the Menu 
+  </div>
 
-$(document).ready(function(){
-  $(".burger").click(function(){
-    $(".menu").show(500);
-    $(".burger").hide(500);
-  });
-  $(".item").click(function(){
-    $(".menu").hide(500);
-    $(".burger").show(500);
-  });
-  $(".cross").click(function(){
-    $(".menu").hide(500);
-    $(".burger").show(500);
-  });
-});
+  <script>
 
- 
+    // java script for header shadow on  scroll
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll > 0) {
+        $("#header").addClass("active");
+      }
+      else {
+        $("#header").removeClass("active");
+      }
+    });
 
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6YZKQ6QJ9B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6YZKQ6QJ9B');
-</script>
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
 
 
- 
-  </body>
+    // hide the Menu 
+
+    $(document).ready(function () {
+      $(".burger").click(function () {
+        $(".menu").show(500);
+        $(".burger").hide(500);
+      });
+      $(".item").click(function () {
+        $(".menu").hide(500);
+        $(".burger").show(500);
+      });
+      $(".cross").click(function () {
+        $(".menu").hide(500);
+        $(".burger").show(500);
+      });
+    });
+
+
+
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YZKQ6QJ9B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6YZKQ6QJ9B');
+  </script>
+
+
+
+
+</body>
+
 </html>
