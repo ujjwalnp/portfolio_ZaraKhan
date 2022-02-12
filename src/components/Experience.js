@@ -35,7 +35,7 @@ export default function Experience() {
                   <Fade duration={300}>
                     <div className="w-full text-gray-700 px-16 py-4">
                       <h3 className="font-medium  text-xl">
-                        {experience.role} at
+                        {experience.role} at &nbsp;
                         <a
                           className="text-red-400 hover:underline transition ease-in-out duration-500"
                           href={experience.link}
