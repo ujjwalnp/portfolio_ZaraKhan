@@ -18,8 +18,8 @@ export default function App() {
       <Hero />
 
       <About />
-      {/* <Experties /> */}
-      <Skills />
+      <Experties />
+      {/* <Skills /> */}
       <Experience />
       <Projects />
       <Contact />

@@ -116,14 +116,6 @@ export default function Contact() {
             <Fade left cascade duration={1000}>
               {" "}
               <div className="w-auto mx-auto">
-                <div className="mx-auto hidden md:block  relative overflow-hidde mt-10 w-44 border-2 border-red-100  shadow-lg hover:shadow-xl  transition ease-in-out duration-700 rounded-full">
-                  <img
-                    className=" rounded-full "
-                    alt="hero"
-                    src="./Images/personal/zara-khan.png"
-                  />
-                </div>
-
                 <div className="grid mt-10  md:grid-cols-1 grid-cols-4 w-auto mx-auto">
                   <a
                     href="https://www.linkedin.com/in/thezarakhan/"

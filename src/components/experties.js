@@ -4,135 +4,160 @@ import { skills } from "../data";
 
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import Zoom from "react-reveal/Zoom";
 
 export default function Experties() {
   return (
     <section id="skills" className="text-gray-700  ">
-      <Fade top duration={1000}>
-        {" "}
-        <h1 className="md:text-6xl text-4xl font-medium text-center title-font mb-4 ">
-          Skills &amp; Experties
-        </h1>
-      </Fade>
-      <div className="w-full md:px-0 px-5 pt-10 mx-auto">
-        <div className="flex flex-wrap lg:w-4/5 mx-auto w-full">
-          <Slide left cascade duration={1000}>
-            {" "}
-            <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-              <div>
-                <Fade left duration={2000}>
-                  <p className="text-xl px-2 py-4 font-medium w-full text-left">
-                    Languages & Libraries
-                  </p>
-                </Fade>
-                <Fade cascade delay={500} duration={1000}>
-                  <div className="md:grid-cols-1 grid grid-cols-2 ">
-                    {skills
-                      .filter((skill) => skill.type === "A")
-                      .map((skillA) => (
-                        <div className="p-2 w-full">
-                          <div className="flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
-                            <img
-                              alt="icon"
-                              className="w-4 h-4 lex-shrink-0 mr-4"
-                              src={skillA.icon}
-                            />
-                            <span className="title-font font-medium ">
-                              {skillA.name}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </Fade>{" "}
-              </div>
-              <div>
-                <Fade left duration={2000}>
-                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
-                    Frameworks & CMS
-                  </p>
-                </Fade>
-                <Fade cascade delay={500} duration={1000}>
-                  <div className="md:grid-cols-1 grid grid-cols-2 ">
-                    {skills
-                      .filter((skill) => skill.type === "B")
-                      .map((skillB) => (
-                        <div className="p-2   w-full">
-                          <div className="  flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
-                            <img
-                              alt="icon"
-                              className="w-4 h-4 lex-shrink-0 mr-4"
-                              src={skillB.icon}
-                            />
-                            <span className="title-font font-medium ">
-                              {skillB.name}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                  </div>{" "}
-                </Fade>
-              </div>
-              <div>
-                <Fade left duration={2000}>
-                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
-                    Tools
-                  </p>
-                </Fade>
-                <Fade cascade delay={500} duration={1000}>
-                  <div className="md:grid-cols-1 grid grid-cols-2 ">
-                    {skills
-                      .filter((skill) => skill.type === "C")
-                      .map((skillC) => (
-                        <div className="p-2   w-full">
-                          <div className="  flex py-2  h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
-                            <img
-                              alt="icon"
-                              className="w-4 h-4 lex-shrink-0 mr-4"
-                              src={skillC.icon}
-                            />
-                            <span className="title-font font-medium ">
-                              {skillC.name}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </Fade>
-              </div>
-              <div>
-                <Fade left duration={2000}>
-                  <p className="text-xl px-2 py-4  font-medium w-full  text-left">
-                    Design
-                  </p>
-                </Fade>
-                <Fade cascade delay={500} duration={1000}>
-                  <div className="md:grid-cols-1 grid grid-cols-2 ">
-                    {skills
-                      .filter((skill) => skill.type === "D")
-                      .map((skillD) => (
-                        <div className="p-2  w-full">
-                          <div className="  flex py-1 md:py-2 h-full items-center">
-                            {/* { <BadgeCheckIcon className="text-red-400 w-4 h-4 flex-shrink-0 mr-4" /> } */}
-                            <img
-                              alt="icon"
-                              className="w-4 h-4 lex-shrink-0 mr-4"
-                              src={skillD.icon}
-                            />
-                            <span className="title-font font-medium ">
-                              {skillD.name}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-                </Fade>
-              </div>
+      <div className="w-2/5 mx-auto text-center">
+        <Fade top cascade duration={1000}>
+          <h1 className="text-3xl font-medium title-font mb-4 ">
+            Things That I enjoy to do.
+          </h1>
+        </Fade>
+      </div>
+      <div className="w-3/4 mx-auto mt-16">
+        <Zoom cascade duration={1000}>
+          {" "}
+          <div className=" grid grid-cols-4 gap-8 ">
+            <div className="bg-gray-100 p-6 cursor-pointer hover:bg-white rounded hover:rounded-sm hover:shadow-lg border-gray-100 border shadow transition ease-in-out duration-500">
+              <Fade duration={500}>
+                <img
+                  src="./Images/personal/seo.png"
+                  className=" h-16 mx-auto mb-3"
+                  alt=""
+                />
+                <p className="text-gray-700 text-xl font-medium  ">
+                  SEO(Search Engine Optimization)
+                </p>
+                <p className="text-gray-700  mt-3">
+                  I employ best SEO practices like "Semantic HTML" and more on
+                  websites and projects I work on to improve the site visibility
+                  and rankings on Google.
+                </p>
+              </Fade>
             </div>
-          </Slide>
+            <div className="bg-gray-100 p-6 cursor-pointer hover:bg-white rounded hover:rounded-sm hover:shadow-lg border-gray-100 border shadow transition ease-in-out duration-500">
+              <Fade duration={500}>
+                <img
+                  src="./Images/personal/responsive.png"
+                  className=" h-16 mx-auto mb-3"
+                  alt=""
+                />{" "}
+                <p className="text-gray-700 text-xl font-medium  ">
+                  Responsive Design
+                </p>
+                <p className="text-gray-700  mt-3">
+                  I am passionate about responsiveness and making the websites I
+                  build look good on different devices, browsers and cross
+                  platforms using both "mobile first" approach and desktop
+                  "media queries"
+                </p>
+              </Fade>
+            </div>
+            <div className="bg-gray-100 p-6  cursor-pointer hover:bg-white rounded hover:rounded-sm hover:shadow-lg border-gray-100 border shadow transition ease-in-out duration-500">
+              <Fade duration={500}>
+                <img
+                  src="./Images/personal/code.png"
+                  className=" h-16 mx-auto mb-3"
+                  alt=""
+                />{" "}
+                <p className="text-gray-700 text-xl font-medium  ">
+                  Reusable & Minimal code
+                </p>
+                <p className="text-gray-700  mt-3">
+                  I try my best to write my code as minimal and efficient as
+                  possible by using tools like CSS Variables and writing custom
+                  utility classes. And create reusable components for future
+                  use.
+                </p>
+              </Fade>
+            </div>
+            <div className="bg-gray-100 p-6 cursor-pointer hover:bg-white rounded hover:rounded-sm hover:shadow-lg border-gray-100 border shadow transition ease-in-out duration-500">
+              <Fade duration={500}>
+                <img
+                  src="./Images/personal/design.png"
+                  className=" h-16 mx-auto mb-3"
+                  alt=""
+                />{" "}
+                <p className="text-gray-700 text-xl font-medium  ">
+                  Great UI/UX
+                </p>
+                <p className="text-gray-700  mt-3">
+                  I value simple content structure, clean design patterns, and
+                  thoughtful interactions. And have a strong eye for designs,
+                  which allows me to transform templates into pixel-perfect code
+                  while making it accessible to all users.
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </Zoom>
+      </div>
+      <div className="w-2/5 mx-auto text-center">
+        <Fade top cascade duration={1000}>
+          <h1 className="text-3xl font-medium title-font mb-4 mt-20 ">
+            Technologies and tools I use.
+          </h1>
+        </Fade>
+      </div>
+      <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> HTML5</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> CSS3</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> JavaScript</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> jQuery</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> React</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center">TailwindCSS</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> Bootstrap</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center">Github</p>
+        </div>{" "}
+      </div>
+      <div className="w-2/5 mx-auto text-center">
+        <Fade top cascade duration={1000}>
+          <h1 className="text-3xl font-medium title-font mb-4 mt-20 ">
+            Design
+          </h1>
+        </Fade>
+      </div>
+      <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> Photoshop</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> Illustrator</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> Sketch</p>
+        </div>
+        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+          {" "}
+          <p className=" text-center"> Figma</p>
         </div>
       </div>
     </section>
