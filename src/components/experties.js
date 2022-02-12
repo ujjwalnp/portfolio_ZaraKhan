@@ -18,7 +18,6 @@ export default function Experties() {
       </div>
       <div className="w-3/4 mx-auto mt-16">
         <Zoom cascade duration={1000}>
-          {" "}
           <div className=" grid grid-cols-4 gap-8 ">
             <div className="bg-gray-100 p-6 cursor-pointer hover:bg-white rounded hover:rounded-sm hover:shadow-lg border-gray-100 border shadow transition ease-in-out duration-500">
               <Fade duration={500}>
@@ -43,7 +42,7 @@ export default function Experties() {
                   src="./Images/personal/responsive.png"
                   className=" h-16 mx-auto mb-3"
                   alt=""
-                />{" "}
+                />
                 <p className="text-gray-700 text-xl font-medium  ">
                   Responsive Design
                 </p>
@@ -61,7 +60,7 @@ export default function Experties() {
                   src="./Images/personal/code.png"
                   className=" h-16 mx-auto mb-3"
                   alt=""
-                />{" "}
+                />
                 <p className="text-gray-700 text-xl font-medium  ">
                   Reusable & Minimal code
                 </p>
@@ -79,7 +78,7 @@ export default function Experties() {
                   src="./Images/personal/design.png"
                   className=" h-16 mx-auto mb-3"
                   alt=""
-                />{" "}
+                />
                 <p className="text-gray-700 text-xl font-medium  ">
                   Great UI/UX
                 </p>
@@ -101,40 +100,34 @@ export default function Experties() {
           </h1>
         </Fade>
       </div>
-      <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> HTML5</p>
+      <Zoom cascade duration={1000}>
+        <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> HTML5</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> CSS3</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> JavaScript</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> jQuery</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> React</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center">TailwindCSS</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> Bootstrap</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center">Github</p>
+          </div>
         </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> CSS3</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> JavaScript</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> jQuery</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> React</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center">TailwindCSS</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> Bootstrap</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center">Github</p>
-        </div>{" "}
-      </div>
+      </Zoom>
       <div className="w-2/5 mx-auto text-center">
         <Fade top cascade duration={1000}>
           <h1 className="text-3xl font-medium title-font mb-4 mt-20 ">
@@ -142,24 +135,22 @@ export default function Experties() {
           </h1>
         </Fade>
       </div>
-      <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> Photoshop</p>
+      <Zoom cascade duration={1000}>
+        <div className=" mt-20 md:w-3/4 w-full px-4 md:px-0 mx-auto grid   md:grid-cols-4 grid-cols-2 gap-10">
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> Photoshop</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> Illustrator</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> Sketch</p>
+          </div>
+          <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
+            <p className=" text-center"> Figma</p>
+          </div>
         </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> Illustrator</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> Sketch</p>
-        </div>
-        <div className="bg-gray-100 p-4  hover:bg-red-400 hover:bg-opacity-70 hover:text-white rounded hover:rounded-sm hover:shadow-lg   shadow transition ease-in-out duration-500">
-          {" "}
-          <p className=" text-center"> Figma</p>
-        </div>
-      </div>
+      </Zoom>
     </section>
   );
 }

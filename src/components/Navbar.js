@@ -8,12 +8,19 @@ export default function Navbar() {
       <div className="md:sticky hidden overflow-x-hidden md:block bg-orange-100 top-0 z-10">
         <Slide top cascade>
           <div className="w-full mx-auto  flex flex-wrap  px-10 flex-col md:flex-row items-center">
-            <div className=" md:my-2  ">
+            <div className=" md:my-2  w-32 ">
               <a href="/" className=" ">
                 <img
                   alt="Zara Khan Logo"
-                  className=" h-20 "
+                  className=" block mx-auto"
+                  id="logo"
                   src="./images/personal/logo.png"
+                />
+                <img
+                  alt="Zara Khan Logo"
+                  className="  h-14 hidden mx-auto"
+                  id="logo-mini"
+                  src="./images/personal/favicon.png"
                 />
               </a>
             </div>

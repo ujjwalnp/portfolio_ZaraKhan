@@ -73,14 +73,23 @@
 
   <script>
 
-    // java script for header shadow on  scroll
+    // javascript for header shadow on  scroll
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
       if (scroll > 0) {
+
         $("#header").addClass("active");
+        $("#logo").removeClass("block");
+        $("#logo").addClass("hidden");
+        $("#logo-mini").addClass("block");
+        $("#logo-mini").removeClass("hidden");
       }
       else {
         $("#header").removeClass("active");
+        $("#logo").removeClass("hidden").fadeIn('slow');;
+        $("#logo").addClass("block");
+        $("#logo-mini").addClass("hidden");
+        $("#logo-mini").removeClass("block");
       }
     });
 
