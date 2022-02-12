@@ -26,8 +26,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact">
-      <p className="md:py-16 py-10"></p>
+    <section id="contact" className="sm:pt-0 pt-16">
+      <p className="md:py-16  py-10"></p>
       <Fade top duration={1000}>
         <h1 className="md:text-6xl text-4xl font-medium text-center text-gray-700 title-font  md:mb-24 mb-12  ">
           Get In Touch

@@ -12,11 +12,12 @@ export default function Experience() {
       <p className="py-16 "></p>
       <div className=" w-full overflow-x-hidden">
         <Fade top duration={1000}>
-          <h1 className="md:text-6xl text-4xl text-gray-700 font-medium text-center title-font  mb-16  ">
+          <h1 className="md:text-6xl text-4xl text-gray-700 font-medium text-center title-font  mb-10  ">
             Where I’ve Worked
-          </h1>{" "}
+          </h1>
         </Fade>
-        <div class="md:block hidden">
+
+        <div class="md:block hidden mt-6">
           <Slide cascade left delay={200} duration={800}>
             <Tabs
               defaultActiveKey="1"
@@ -32,16 +33,14 @@ export default function Experience() {
                   key={experience.key}
                 >
                   <Fade duration={300}>
-                    {" "}
                     <div className="w-full text-gray-700 px-16 py-4">
                       <h3 className="font-medium  text-xl">
-                        {experience.role} at{" "}
+                        {experience.role} at
                         <a
                           className="text-red-400 hover:underline transition ease-in-out duration-500"
                           href={experience.link}
                         >
-                          {" "}
-                          {experience.company}{" "}
+                          {experience.company}
                         </a>
                       </h3>
                       <p class="text-sm">{experience.duration}</p>
@@ -52,7 +51,7 @@ export default function Experience() {
                           </li>
                         ))}
                       </ul>
-                    </div>{" "}
+                    </div>
                   </Fade>
                 </TabPane>
               ))}
@@ -62,26 +61,27 @@ export default function Experience() {
 
         <div className="block md:hidden">
           {experience.map((experience) => (
-            <Slide left cascade duration={2000}>
-              <div className="w-full text-gray-700 p-4">
+            <Slide left cascade duration={1000}>
+              <div className="sm:w-4/5 mx-auto text-gray-700 sm:px-0 px-6 mt-10">
                 <h3 className="font-medium  text-xl">
-                  {experience.role} at{" "}
+                  {experience.role} at &nbsp;
                   <a
                     className="text-red-400 hover:underline transition ease-in-out duration-500"
                     href={experience.link}
                   >
-                    {" "}
-                    {experience.company}{" "}
+                    {experience.company}
                   </a>
                 </h3>
                 <p class="text-sm">{experience.duration}</p>
-                <ul className="pointerlist pt-4 pl-5">
-                  {experience.tasks.map((x) => (
-                    <li className="text-gray-700 py-2" key={x.task}>
-                      {x.task}
-                    </li>
-                  ))}
-                </ul>
+                <Slide left cascade duration={500}>
+                  <ul className="pointerlist pt-4 pl-5">
+                    {experience.tasks.map((x) => (
+                      <li className="text-gray-700 py-2" key={x.task}>
+                        {x.task}
+                      </li>
+                    ))}
+                  </ul>
+                </Slide>
               </div>
             </Slide>
           ))}

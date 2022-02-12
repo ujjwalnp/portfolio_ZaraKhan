@@ -15,10 +15,10 @@ export default function About() {
           </h1>
         </Fade>
 
-        <div className="  flex  flex-wrap  w-full px-4 md:px-0 md:w-5/6 items-center  md:mt-24 mt-16 mx-auto  ">
+        <div className="  flex  flex-wrap  w-full px-4 md:px-0 md:w-5/6 sm:w-2/3 items-center  md:mt-24 mt-16 mx-auto  ">
           <Fade left cascade duration={900}>
             {" "}
-            <div className="md:flex-1   flex-initial relative w-full mb-20">
+            <div className="md:flex-1   flex-initial relative  w-full  mb-20">
               <div className="z-20  relative overflow-hidden frame w-2/3 mx-auto border-8 border-white  shadow-lg hover:shadow-xl  transition ease-in-out duration-700 rounded-full">
                 <img
                   className=" inner-img  "
