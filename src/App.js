@@ -5,11 +5,8 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import Experience from "./components/Experience";
-import HeaderThree from "./components/header";
 import Experties from "./components/experties";
-import { skills } from "./data";
 
 export default function App() {
   return (
@@ -19,7 +16,7 @@ export default function App() {
 
       <About />
       <Experties />
-      {/* <Skills /> */}
+
       <Experience />
       <Projects />
       <Contact />

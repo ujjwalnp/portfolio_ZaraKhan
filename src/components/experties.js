@@ -1,9 +1,8 @@
 // import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../data";
 
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
+
 import Zoom from "react-reveal/Zoom";
 
 export default function Experties() {

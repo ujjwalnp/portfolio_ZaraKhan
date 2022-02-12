@@ -1,7 +1,7 @@
 import React from "react";
 
 import Slide from "react-reveal/Slide";
-import Flip from "react-reveal/Flip";
+
 import Fade from "react-reveal/Fade";
 
 export default function Hero() {
