@@ -11,7 +11,7 @@ export default function Experties() {
       <div className="w-2/5 mx-auto text-center">
         <Fade top duration={1000}>
           <h1 className="text-3xl font-medium title-font mb-4 ">
-            Things That I enjoy to do.
+            Things that I enjoy to do.
           </h1>
         </Fade>
       </div>
