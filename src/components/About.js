@@ -54,10 +54,10 @@ export default function About() {
                 My main focus these days is building accessible and digital
                 experiences at{" "}
                 <a
-                  href="https://www.linkedin.com/company/blue-lion-web-studio/"
+                  href="https://www.linkedin.com/company/advanlogix/"
                   className="hover:underline text-red-400   transition ease-in-out duration-500 cursor-pointer"
                 >
-                  Blue Lion web studio
+                  Advanlogix Solutions
                 </a>{" "}
                 for a variety of clients.
                 <br></br>

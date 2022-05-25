@@ -2,20 +2,43 @@ export const projects = [
   {
     title: "NBKC Bank",
     subtitle: "Online Banking Website",
-    description:  "  NBKC is an online bank in USA that provides easy online applications, hassle-free accounts, business and personal loans and knowledgeable support. The site was built in OctoberCMS using HTML5, TailwindCSS and JavaScript.",
+    description:
+      "  NBKC is an online bank in USA that provides easy online applications, hassle-free accounts, business and personal loans and knowledgeable support. The site was built in OctoberCMS using HTML5, TailwindCSS and JavaScript.",
     image: "./Images/projects/nbkc.png",
     link: "https://www.nbkc.com/",
-    tags:  [{ tag: "Tailwind"  }, { tag: "OctoberCMS"  }, { tag: "JavaScript"  }    ],
+    tags: [
+      { tag: "Tailwind CSS" },
+      { tag: "OctoberCMS" },
+      { tag: "JavaScript" },
+    ],
+  },
+  {
+    title: " BELAŜIKA",
+    subtitle: "Brand website",
+    description:
+      "This Online retail site created for a brand.  A clean and minimal design build from scrach from UX/UI to production. The website was developed using HTML5, Tailwind CSS and ReactJS. ",
+    image: "./Images/projects/belasika.png",
+    link: "https://www.belasika.com/",
+    tags: [{ tag: "Tailwind CSS" }, { tag: "React JS" }],
+  },
+  {
+    title: "MYLE Web",
+    subtitle: "Online Event booking ",
+    description:
+      " Myle is the next generation in entertainment software where you can curate your entertainment experience with just a few taps. It is a web application that was created using Tailwind CSS and VueJS. ",
+    image: "./Images/projects/myle.png",
+    link: "https://www.belasika.com/",
+    tags: [{ tag: "Tailwind CSS" }, { tag: "VUE JS" }],
   },
   {
     title: "UV Schools",
     subtitle: "School Management System",
-    description:  "   UVSchools is the most user friendly CMS based managment system supported to streamlining the administrative tasks & develop a powerful relationship between educators & parents for child's holistic development. The system was developed using Bootstrap and AngularJS. ",
+    description:
+      "   UVSchools is the most user friendly CMS based managment system supported to streamlining the administrative tasks & develop a powerful relationship between educators & parents for child's holistic development. The system was developed using Bootstrap and AngularJS. ",
     image: "./Images/projects/uv-schools.png",
     link: "https://www.uvschools.com/",
-    tags:  [{ tag: "Bootstrap"  }, { tag: "AngularJS"  }, { tag: "HTML5"  }    ],
+    tags: [{ tag: "Bootstrap" }, { tag: "AngularJS" }, { tag: "HTML5" }],
   },
-   
 ];
 
 export const skills = [
@@ -112,7 +135,7 @@ export const skills = [
     name: "SQL",
     type: "A",
   },
-  
+
   {
     icon: "../images/personal/pointer-holo.svg",
     name: "Python",
@@ -187,10 +210,10 @@ export const skills = [
 
 export const experience = [
   {
-    company: "BlueLion Web Studio",
+    company: "Advanlogix Solutions",
     role: "Front End Web Developer",
     duration: "Dec 2018 - Present",
-    link: "https://www.linkedin.com/company/blue-lion-web-studio/",
+    link: "https://www.linkedin.com/company/advanlogix",
     key: "1",
     tasks: [
       {
@@ -202,7 +225,9 @@ export const experience = [
       {
         task: "Developed features to enhance the user experience and Optimized web pages for maximum speed and scalability",
       },
-      { task: "Recreated the frontend design for a leading bank website in Kansas, USA." },
+      {
+        task: "Recreated the frontend design for a leading bank website in Kansas, USA.",
+      },
     ],
   },
   {
@@ -220,7 +245,7 @@ export const experience = [
       },
       {
         task: "Used best practices to optimize SEO",
-      } 
+      },
     ],
   },
 
@@ -238,13 +263,9 @@ export const experience = [
         task: "Used designing tools (Adobe Photoshop, Adobe Illustrator) to design and edit illustrations, vectors, and images to websites",
       },
       { task: "Build reusable code for future use" },
-      
-   
     ],
   },
 ];
-
-
 
 export const testimonials = [
   {
