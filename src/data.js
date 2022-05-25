@@ -27,7 +27,7 @@ export const projects = [
     description:
       " Myle is the next generation in entertainment software where you can curate your entertainment experience with just a few taps. It is a web application that was created using Tailwind CSS and VueJS. ",
     image: "./Images/projects/myle.png",
-    link: "https://www.belasika.com/",
+    link: "https://web.myle.com/login",
     tags: [{ tag: "Tailwind CSS" }, { tag: "VUE JS" }],
   },
   {
